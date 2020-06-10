@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="tab.css">
+</head>
+<body>
+
+<h1>GALLERY</h1>
+
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'Bleaders')">Business Leaders</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Hackers')">Most Famous Hackers</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Oscar')">Oscar Winning Actors</button>
+</div>
+
+<div id="Bleaders" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="img-holder">
+     <img src="tim.jpg" alt="Tim Cook"></img>
+    </div>
+    <div class="img-holder">
+     <img src="sheryl.jpg" alt="Sheryl Sandberg"></img>
+    </div>
+    </div>
+    <div class="column">
+    <div class="img-holder">
+      <img src="bob.jpg" alt="Bob Iger"></img>
+    </div>
+    <div class="img-holder">
+     <img src="reed.png" alt="Reed Hastings"></img>
+    </div>
+    </div>
+    <div class="column">
+    <div class="img-holder">
+     <img src="musk.jpg" alt="Elon Musk" ></img>
+   </div>
+     <div class="img-holder">
+     <img src="https://www.businessinsider.in/thumb/msid-74393936,width-600,resizemode-4,imgsize-86019/thelife/personalities/news/interesting-facts-about-warrant-buffet-the-most-inspiring-investor-and-philanthropist-of-all-times/warren-buffet.jpg" alt="Warren Buffet"></img>
+   </div>
+    </div>
+   </div>
+ </div>
+<div id="Hackers" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="img-holder">
+     <img src="kevin.jpg" alt="Tim Cook"></img>
+    </div>
+    <div class="img-holder">
+     <img src="jonathan.jpg" alt="Sheryl Sandberg"></img>
+    </div>
+    </div>
+    <div class="column">
+    <div class="img-holder">
+      <img src="albert.jpg" alt="Bob Iger"></img>
+    </div>
+    <div class="img-holder">
+     <img src="poulsen.jpg" alt="Reed Hastings"></img>
+    </div>
+    </div>
+    <div class="column">
+    <div class="img-holder">
+     <img src="gary.jpg" alt="Elon Musk" ></img>
+   </div>
+     <div class="img-holder">
+     <img src="https://zdnet2.cbsistatic.com/hub/i/r/2018/03/16/c5f6a6b4-49a0-45c2-ad4b-c9e4228631fd/resize/220x165/e0a4b8aa5cb97784b62b8a32f8dae839/photo-blursep092017200742.jpg" alt="Adrain Lamo"></img>
+   </div>
+    </div>
+   </div>
+</div>
+
+<div id="Oscar" class="tabcontent">
+  <div class="row">
+  <div class="column">
+    <div class="img-holder">
+     <img src="daniel.jpg" alt="Tim Cook"></img>
+    </div>
+    <div class="img-holder">
+     <img src="colin.jpg" alt="Sheryl Sandberg"></img>
+    </div>
+    </div>
+    <div class="column">
+    <div class="img-holder">
+      <img src="heath.jpg" alt="Bob Iger"></img>
+    </div>
+    <div class="img-holder">
+     <img src="timothy.jpg" alt="Reed Hastings"></img>
+    </div>
+    </div>
+    <div class="column">
+    <div class="img-holder">
+     <img src="robert.jpg" alt="Elon Musk" ></img>
+   </div>
+     <div class="img-holder">
+     <img src="https://zdnet2.cbsistatic.com/hub/i/r/2018/03/16/c5f6a6b4-49a0-45c2-ad4b-c9e4228631fd/resize/220x165/e0a4b8aa5cb97784b62b8a32f8dae839/photo-blursep092017200742.jpg" alt="Adrain Lamo"></img>
+   </div>
+    </div>
+   </div>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
